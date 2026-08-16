@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "closet.json",
+  "description": "The wardrobe the stylist reasons over. One entry per garment. The real file is personal and is not published — see closet.sample.json for a runnable placeholder.",
+  "type": "object",
+  "required": ["_meta", "items"],
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "description": "Who the wardrobe belongs to and the constants the stylist reasons from. This block is personal: it carries an email, a home location and a physical description. Keep it out of version control.",
+      "properties": {
+        "owner": { "type": "string", "description": "Email the lookbook's feedback button drafts to. Optional — unset means the button copies to the clipboard instead." },
+        "location": { "type": "string", "description": "Human-readable place, shown on the page" },
+        "lat": { "type": "number", "description": "Latitude for the weather lookup" },
+        "lon": { "type": "number", "description": "Longitude for the weather lookup" },
+        "aesthetic": { "type": "string", "description": "The target register, e.g. 'old money / quiet luxury'" },
+        "palette": { "type": "array", "items": { "type": "string" }, "description": "Colour families the wardrobe is built around" },
+        "colouring": { "type": "string", "description": "Complexion, hair and build. Drives which tones are flattering." },
+        "daily_contexts": { "type": "array", "items": { "type": "string" }, "description": "Where the clothes actually get worn" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "description": "Every garment, one object each",
+      "items": {
+        "type": "object",
+        "required": ["id", "cat", "file", "name", "color", "warmth", "formality"],
+        "properties": {
+          "id":    { "type": "string", "description": "Stable short handle, e.g. J1, T7, B3. Feedback refers to garments by this." },
+          "cat":   { "type": "string", "enum": ["jacket", "midlayer", "top", "bottom", "shoes", "hat", "scarf", "accessory"] },
+          "file":  { "type": "string", "description": "Path to the garment photo, relative to the project root" },
+          "name":  { "type": "string", "description": "How a human refers to it, e.g. 'Dark brown puffer'" },
+          "brand": { "type": "string" },
+          "color": { "type": "string", "description": "Free text, matched against the COLOR_HEX table in build_lookbook.py" },
+          "warmth":     { "type": "integer", "minimum": 1, "maximum": 5, "description": "1 = summer-only, 5 = deep winter. Looks are capped at one warmth-3+ piece unless it is genuinely cold." },
+          "weight":     { "type": "string", "enum": ["light", "mid", "heavy"] },
+          "formality":  { "type": "string", "enum": ["casual", "smart-casual", "smart", "formal"] },
+          "old_money":  { "type": "boolean", "description": "Whether the piece reads as quiet luxury. False pieces are used sparingly." },
+          "rain":       { "type": "string", "enum": ["none", "light", "heavy"], "description": "How much weather the piece will take" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# ── PERSONAL — NEVER COMMIT ─────────────────────────────────────────────
+# closet.json carries a home location, an email and a physical description.
+# The feedback log and the learned rules are a record of what was actually
+# worn. None of it belongs in version control. Only the *.sample.json and
+# *.schema.json variants are tracked.
+closet.json
+closet-brief.json
+today.json
+today.png
+feedback.json
+style-memory.md
+lookbook.html
+history/
+
+# Garment photographs
+photos/
+Clothes*/
+Hats*/
+.thumbs/
+
+# ── Local scratch ───────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.env*
+.DS_Store

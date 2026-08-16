@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "owner": "",
+    "location": "Somewhere, UK",
+    "lat": 51.5072,
+    "lon": -0.1276,
+    "aesthetic": "old money / quiet luxury",
+    "palette": ["navy", "cream", "camel", "tobacco", "olive/sage", "stone", "white", "charcoal"],
+    "colouring": "Describe complexion, hair and build here. The stylist uses it to decide which tones flatter.",
+    "daily_contexts": ["lectures", "library", "social with friends"]
+  },
+  "items": [
+    { "id": "J1", "cat": "jacket",   "file": "photos/jacket-puffer.png",  "name": "Dark brown puffer",   "brand": "—", "color": "dark brown", "warmth": 4, "weight": "heavy", "formality": "casual",       "old_money": true,  "rain": "light" },
+    { "id": "J2", "cat": "jacket",   "file": "photos/jacket-harrington.png", "name": "Tan Harrington",  "brand": "—", "color": "tan",        "warmth": 2, "weight": "mid",   "formality": "smart-casual", "old_money": true,  "rain": "light" },
+    { "id": "M1", "cat": "midlayer", "file": "photos/midlayer-qzip.png",  "name": "Camel quarter-zip",   "brand": "—", "color": "camel",      "warmth": 3, "weight": "mid",   "formality": "smart-casual", "old_money": true,  "rain": "none"  },
+    { "id": "T1", "cat": "top",      "file": "photos/top-white-tee.png",  "name": "White tee",           "brand": "—", "color": "white",      "warmth": 1, "weight": "light", "formality": "casual",       "old_money": true,  "rain": "none"  },
+    { "id": "T2", "cat": "top",      "file": "photos/top-oxford.png",     "name": "Cream oxford shirt",  "brand": "—", "color": "cream",      "warmth": 2, "weight": "light", "formality": "smart",        "old_money": true,  "rain": "none"  },
+    { "id": "T3", "cat": "top",      "file": "photos/top-navy-knit.png",  "name": "Navy knit",           "brand": "—", "color": "navy",       "warmth": 3, "weight": "mid",   "formality": "smart-casual", "old_money": true,  "rain": "none"  },
+    { "id": "B1", "cat": "bottom",   "file": "photos/bottom-chinos.png",  "name": "Stone chinos",        "brand": "—", "color": "stone",      "warmth": 2, "weight": "mid",   "formality": "smart-casual", "old_money": true,  "rain": "none"  },
+    { "id": "B2", "cat": "bottom",   "file": "photos/bottom-jeans.png",   "name": "Indigo jeans",        "brand": "—", "color": "blue",       "warmth": 2, "weight": "mid",   "formality": "casual",       "old_money": false, "rain": "none"  },
+    { "id": "S1", "cat": "shoes",    "file": "photos/shoes-white.png",    "name": "White leather trainers", "brand": "—", "color": "white",   "warmth": 1, "weight": "light", "formality": "smart-casual", "old_money": true,  "rain": "none"  },
+    { "id": "S2", "cat": "shoes",    "file": "photos/shoes-boots.png",    "name": "Brown chelsea boots", "brand": "—", "color": "brown",      "warmth": 3, "weight": "mid",   "formality": "smart",        "old_money": true,  "rain": "heavy" },
+    { "id": "A1", "cat": "scarf",    "file": "photos/scarf-oatmeal.png",  "name": "Oatmeal scarf",       "brand": "—", "color": "oatmeal",    "warmth": 3, "weight": "light", "formality": "smart-casual", "old_money": true,  "rain": "none"  },
+    { "id": "A2", "cat": "hat",      "file": "photos/hat-navy-cap.png",   "name": "Navy cap",            "brand": "—", "color": "navy",       "warmth": 1, "weight": "light", "formality": "casual",       "old_money": false, "rain": "light" }
+  ]
+}
